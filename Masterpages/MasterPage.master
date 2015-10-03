@@ -1,0 +1,350 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Masterpages_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+   
+    <asp:ContentPlaceHolder id="head" runat="server">
+   
+    </asp:ContentPlaceHolder>
+
+
+
+   <script type="text/javascript">
+var c=0
+var s
+function photoGallery()
+{
+if (c%5==0){
+document.getElementById('photo-gallery').src = "images/pic1.JPG";
+}
+if (c%5==1){
+document.getElementById('photo-gallery').src = "images/pic3.JPG";
+}
+if (c%5==2){
+document.getElementById('photo-gallery').src = "images/pic2.JPG";
+}
+if (c%5==3){
+document.getElementById('photo-gallery').src = "images/pic4.JPG";
+}
+
+c=c+1
+s=setTimeout("photoGallery()",2000)
+}
+</script>
+
+
+
+
+
+
+   
+
+
+
+    <style type="text/css">
+        .style1
+        {
+            text-align: center;
+            color: #FFFFFF;
+        }
+       .div1
+       {float:left;
+       	width:200px;
+       	}
+       	.maidul
+       	{
+       		text-align:right;
+       	
+       		}
+       		.lc
+       		{    float:left;
+       		     width:210px;
+       		    
+       		  
+       			text-align:center;
+       			}
+       			.lc1
+       		{   float:right;
+       			  text-align:right;
+       			}
+       		
+        .style2
+        {
+            display: inline;
+            padding: 0 0 0 5px;
+            font-family: arial;
+            font-size: 9px;
+            letter-spacing: 1px;
+            color: #555;
+            text-align: center;
+        }
+       		
+        .style3
+        {
+            font-size: x-large;
+            font-weight: bold;
+        }
+       		
+        </style>
+
+
+
+  <script type="text/javascript">
+
+var d=new Date();
+var weekday=new Array(7);
+weekday[0]="Sunday";
+weekday[1]="Monday";
+weekday[2]="Tuesday";
+weekday[3]="Wednesday";
+weekday[4]="Thursday";
+weekday[5]="Friday";
+weekday[6]="Saturday";
+
+
+
+</script> 
+
+
+
+
+  
+<script type="text/javascript">
+
+var d=new Date();
+var month=new Array(12);
+month[0]="January";
+month[1]="February";
+month[2]="March";
+month[3]="April";
+month[4]="May";
+month[5]="June";
+month[6]="July";
+month[7]="August";
+month[8]="September";
+month[9]="October";
+month[10]="November";
+month[11]="December";
+
+
+
+</script> 
+
+
+</head>
+<body  id="bodyMaster" runat="server"  >
+    <form id="form1" runat="server">
+    
+  
+
+
+
+
+    
+    <div id="PageWrapper">
+      <div>&nbsp;</div>
+      
+     
+    <div id="Header">
+    <div>&nbsp;</div>
+    <div id="namehold"><div id="name"><h1 class="style1"><span class="style3">Kalihati&nbsp;  College.</span>&nbsp; 
+        Kalihati,  Tangail.</h1></div></div>
+    <div class="menu">
+    
+   <div id="bannerlink" >
+                      
+    			<ul class="lc">
+    			
+    			<li ><ul ><li class="style2">
+                  
+     Date:<script type="text/javascript">document.write( weekday[d.getDay()]);</script>&nbsp;<script type="text/javascript">document.write(month[d.getMonth()]);</script>
+     <script type="text/javascript">
+
+var d1 = new Date();
+document.write(d1.getFullYear());
+
+</script></li>
+
+
+
+
+
+</ul></li>
+</ul>
+<ul class="lc1">
+
+<li>
+               <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>	
+           
+              
+        <li>
+            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/menu/about.aspx">About 
+            KC</asp:HyperLink></li>
+
+        <li>
+            <asp:HyperLink ID="HyperLink5" runat="server" 
+                NavigateUrl="~/menu/academic.aspx">Academic</asp:HyperLink></li>
+                 <li>
+                 
+                
+             <asp:HyperLink ID="HyperLink3" runat="server" 
+                NavigateUrl="~/menu/faculty.aspx">Faculty</asp:HyperLink></li>
+              
+                 <li>
+            <asp:HyperLink ID="HyperLink8" runat="server" 
+                NavigateUrl="~/menu/result.aspx">Result</asp:HyperLink></li>
+        <li>
+            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/menu/online.aspx">Online Admission</asp:HyperLink></li>	
+   
+          <li >
+               <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/menu/sitemap.aspx">Site map</asp:HyperLink></li>
+               <li>
+               <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/menu/contact.aspx">Contacts</asp:HyperLink>
+               </li>	
+               
+                <li><a href="http://mail.shamserfakircollegebd.com">Webmail</a></li>
+			</ul>
+
+		</div>
+</div>
+  </div>  
+
+ 
+  <div class="leftc">
+  <div id="content">
+      <div id="leftcol">
+          <div id='event'>
+              <h2>Notice Board</h2>
+          </div>
+<ul>
+		
+			<li>
+                <asp:HyperLink ID="HyperLink9" runat="server" 
+                    NavigateUrl="~/Notice Board/Holiday.aspx" >Holiday Notice</asp:HyperLink></li>
+			<li> <asp:HyperLink ID="HyperLink10" runat="server" 
+                    NavigateUrl="~/Notice Board/Timing.aspx" >Notice on Class Timing</asp:HyperLink></li>
+
+			<li> <asp:HyperLink ID="HyperLink11" runat="server" 
+                    NavigateUrl="~/Notice Board/Aministrative.aspx" >Aministrative Notice</asp:HyperLink></li>
+			<li> <asp:HyperLink ID="HyperLink12" runat="server" 
+                    NavigateUrl="~/Notice Board/Exam.aspx" >Exam Notice</asp:HyperLink></li>
+			<li> <asp:HyperLink ID="HyperLink13" runat="server" 
+                    NavigateUrl="~/Notice Board/rules.aspx" >College rules</asp:HyperLink></li>
+                    <li class="ct1">&nbsp;</li>
+                    <li >&nbsp;
+                    &nbsp;
+                    </li>
+                    <li >&nbsp;
+                    &nbsp;
+                    </li>
+                    <li ><h2 class="ct2">Result</h2></li>
+                    <li>  
+                <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/Result/Hsc.aspx"> Hsc Result </asp:HyperLink></li>
+			<li>  <asp:HyperLink ID="HyperLink15" runat="server" 
+                    NavigateUrl="~/Result/Degree.aspx">Degree Result</asp:HyperLink></li>
+               <li>  <asp:HyperLink ID="HyperLink16" runat="server" 
+                       NavigateUrl="~/Result/Honer.aspx">Honer's Result</asp:HyperLink></li>
+               <li>  <asp:HyperLink ID="HyperLink17" runat="server" 
+                       NavigateUrl="~/Result/Master.aspx">Master's Result</asp:HyperLink></li>
+			<li>  <asp:HyperLink ID="HyperLink18" runat="server" 
+                    NavigateUrl="~/Result/Yearly.aspx">Yearly College Result</asp:HyperLink></li>
+			<li>  <asp:HyperLink ID="HyperLink19" runat="server" 
+                    NavigateUrl="~/Result/Honorable.aspx">Honorable Mention</asp:HyperLink></li>
+			<li>  <asp:HyperLink ID="HyperLink20" runat="server" 
+                    NavigateUrl="~/Result/Competition.aspx">Competition Result</asp:HyperLink></li>	
+                    <li class="ct3">&nbsp;</li>
+                      <li >&nbsp;
+                    &nbsp;
+                    </li>
+                    <li >&nbsp;
+                    &nbsp;
+                    </li>
+                     <li ><h2 class="ct2">News And Views</h2></li>
+                  
+                
+			
+			
+
+			<li><asp:HyperLink ID="HyperLink23" runat="server" 
+                    NavigateUrl="~/News/guideline.aspx">Teaching guideline</asp:HyperLink></li>
+			
+			<li><asp:HyperLink ID="HyperLink25" runat="server" NavigateUrl="~/News/Debate.aspx">Debate Competetion</asp:HyperLink></li>
+		<li>
+              <a href="#">more
+            </a>
+            </li>  
+            <li class="ct5">&nbsp;</li>
+            	      
+                    
+		</ul>
+
+
+</div>
+  
+  
+  </div></div>
+
+<div id="MainContent">
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="Footer"><div id="footerlink">
+
+		<div class="line">
+		</div>
+<div class="div2">
+		
+	<ul>
+
+
+	<li >
+               <asp:HyperLink ID="HyperLink21" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>	
+           
+              
+        <li>
+            <asp:HyperLink ID="HyperLink22" runat="server" NavigateUrl="~/menu/about.aspx">About 
+            KC</asp:HyperLink></li>
+
+        <li>
+            <asp:HyperLink ID="HyperLink24" runat="server" 
+                NavigateUrl="~/menu/academic.aspx">Academic</asp:HyperLink></li>
+                 <li>
+                 
+                
+             <asp:HyperLink ID="HyperLink26" runat="server" 
+                NavigateUrl="~/menu/faculty.aspx">Faculty</asp:HyperLink></li>
+              
+                 <li>
+            <asp:HyperLink ID="HyperLink27" runat="server" 
+                NavigateUrl="~/menu/result.aspx">Result</asp:HyperLink></li>
+        <li>
+            <asp:HyperLink ID="HyperLink28" runat="server" NavigateUrl="~/menu/online.aspx">Online Admission</asp:HyperLink></li>	
+   
+          <li >
+               <asp:HyperLink ID="HyperLink29" runat="server" NavigateUrl="~/menu/sitemap.aspx">Site map</asp:HyperLink></li>
+               <li>
+               <asp:HyperLink ID="HyperLink30" runat="server" NavigateUrl="~/menu/contact.aspx">Contacts</asp:HyperLink>
+               </li>	
+               
+                <li><a href="http://mail.shamserfakircollegebd.com">Webmail</a></li>
+                
+	</ul>
+<div class="div3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright © 2010.Kalihati Degree  College  
+    Kalihati,  Tangail, 
+            Bangladesh.</div>
+	</div>
+
+</div>
+    </div></div>
+    </form>
+</body>
+</html>
