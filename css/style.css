@@ -1,0 +1,263 @@
+
+#wrapper
+{
+width:960px;
+height:1200px;
+margin:0 auto;
+overflow:hidden;
+border:2px solid gray;
+}
+
+  /*.......................Header css starts here.........*/
+#header
+{
+height:507px;
+}
+
+.logo
+{
+padding-bottom:0px;
+height:250;
+width:960;
+}
+.menu
+{
+height:35px;
+background-color:#003333;
+border-bottom:5px inset DarkSlateGrey ;
+}
+
+.menu ul
+{
+list-style:none;
+margin-left:30px;
+}
+
+.menu li
+{
+float:left;
+border-right:2px solid #fff;
+padding-left:10px;
+padding-right:10px;
+margin:6px;
+}
+
+.menu li.last
+{
+border:0;
+}
+
+.menu li a, .menu li a:visited
+{
+text-decoration:none;
+font-family:verdana;
+font-size:12px;
+color:#fff;
+font-weight:bold;
+}
+
+.menu li a:hover
+{
+text-decoration:underline;
+}
+
+#banner
+{
+height:302px;
+border-bottom-style:ridge;
+border-bottom-color:#999999;
+}
+ /*.......................right-section css starts here.........*/
+.right-section
+{
+background-color:#0099CC;
+border:2px solid #003333;
+width:280px;
+height:298px;
+margin-top:0px;
+margin-right:2px;
+float:right;
+padding-right:2px;
+}
+
+  /*.......................Left-section css starts here.........*/
+.left-section
+{
+width:250px;
+margin-top:5px;
+float:left;
+padding-right:3px;
+}
+.heading
+{
+margin-top;20px;
+width:250px;
+float:left;
+margin-top:10px;
+margin-right:5px;
+font-size:24px;
+font-style:italic;
+}
+. right heading
+{
+margin-top;1px;
+margin-left:5px;
+width:280px;
+height:250px;
+float:right;
+margin-top:1px;
+margin-right:1px;
+font-size:24px;
+font-style:bold;
+}
+#change
+{
+color:#990000;
+}
+
+.left-section ul
+{
+list-style:none;
+}
+
+.left-section li
+{
+border-bottom:1px solid #ccc;
+line-height:40px;
+padding-left:20px;
+background:url(../images/arrow.gif) 0px 15px no-repeat;
+}
+
+.left-section li a, .left-section li a:visited
+{
+font-size:18px;
+color:#663333;
+text-decoration:none;
+}
+
+.left-section li a:hover
+{
+color:#000;
+}
+
+.autho
+{
+padding-left:50px;
+padding-top:10px;
+}
+
+.quote
+{
+float:right;
+.right-section
+{
+width:150px;
+margin-top:5px;
+float:right;
+padding-right:3px;
+}
+}
+  
+  /*.......................Middle-section css starts here.........*/
+.main
+{
+width:960px;
+}
+#news
+{
+color:#990099;
+ }
+#container
+{
+width:605px;
+height:650px;
+float:left;
+margin-top:10px;
+border-left:1px solid gray;
+}
+
+#paragraph
+{
+
+margin-left:30px;
+text-align:justify;
+}
+
+.secheading
+{
+margin-top:15px;
+width:290px;
+float:right;
+margin-top:15px;
+margin-right:240px;
+font-size:24px;
+font-style:italic;
+}
+
+#middle-right
+{
+margin-top:10px;
+margin-left:10px;
+height:70px;  
+width:500px;
+}
+.lastheading
+{
+width:150px;
+float:right;
+margin-top:12px;
+margin-right:270px;
+font-size:24px;
+font-style:italic;
+}
+
+#section
+{
+width:545px;
+margin-top:35px;
+margin-left:15px;
+height:115px;
+border-bottom:1px solid gray;
+}
+
+#amul
+{
+width:200px;
+height:110px;
+float:left;
+padding-top:5px;
+border-right:1px solid gray;
+}
+
+#adani
+{
+width:170px;
+height:115px;
+float:left;
+border-right:1px solid gray;
+}
+
+#rel
+{
+float:left;
+width:125px;
+padding-left:10px;  
+}
+
+#secsection
+{
+width:545px;
+height:115px;
+margin-left:15px;
+float:left;
+}
+
+
+#footer
+{
+ background-color:#333333;
+ width:900;
+ height:200;
+ clear:both;
+ text-align:center;  
+}
